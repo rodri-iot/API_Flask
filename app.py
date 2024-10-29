@@ -21,7 +21,7 @@ def index():
         val_3 = float(request.form['val3'])
         val_4 = float(request.form['val4'])
         my_df = pd.DataFrame([[val_1, val_2, val_3, val_4]], columns= ["sepal length (cm)", "sepal width (cm)", "petal length (cm)", "petal width (cm)"] )
-        prediction = str(my_model.predict(my_df))
+        prediction = str(my_model.predict(my_df)[0])
         pred_class = model_class[prediction]
     else:
         pred_class = None
