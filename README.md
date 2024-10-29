@@ -5,3 +5,6 @@ Boot Camp Data Science
 ```py
 pip install pandas ipykernel nbformat scikit-learn seaborn flask joblib
 ```
+
+### Open project
+`https://web-services-tdt4.onrender.com/`
