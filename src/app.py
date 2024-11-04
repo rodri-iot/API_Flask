@@ -2,10 +2,12 @@
 from flask import Flask, request, render_template
 import joblib
 import pandas as pd
+import os
 
-my_model = joblib.load("my_model.joblib")
+model_path = os.path.join(os.path.dirname(__file__), "../models/my_model.joblib")
+my_model = joblib.load(model_path)
 
-app = Flask(__name__) # __name__ = app => name by file
+app = Flask(__name__, template_folder="../templates", static_folder="../static") # __name__ = app => name by file
 model_class = {
     "0": "Setosa",
     "1": "Versicolor",
