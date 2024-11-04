@@ -15,6 +15,8 @@ The project is organized as follows:
   - `interin/` - For intermediate data that has been transformed.
   - `processed/` - For the final data to be used for modeling.
   - `raw/` - For raw data without any processing.
+- `static` - This directory holds static files such as CSS, JavaScript, and images.
+- `templates` - This directory contains HTML files for rendering views in the Flask app.
  
     
 ## Setup
