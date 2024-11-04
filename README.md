@@ -102,6 +102,7 @@ To start the API, follow these steps:
     ```
    This will allow you to interact with the API from your browser.
 
+**URL to open the API:** `https://web-services-rid8.onrender.com/`
 
 ## Contributors
 
